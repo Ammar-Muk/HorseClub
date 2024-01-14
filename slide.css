@@ -1,0 +1,37 @@
+.slider{
+    width: 1265px;
+    height: 480px;
+    margin: auto;
+    position:relative;
+	overflow:hidden;
+}
+.slider ul
+{
+    padding: 0;
+    width: 5400px;
+    position: relative;
+    margin:0 ;
+    animation: sliding 10s ease-in infinite;
+}
+.slider ul li{
+    float: left;
+    position: relative;
+}
+.slider img{
+    width: 1265px;
+    height: 480px;
+}
+.slider ul:hover{
+    animation-play-state:paused ;
+}
+@keyframes sliding{
+    0%,10%{
+        left:0;
+    }
+    15%,30%{
+        left: -1265px;
+    }
+    35%,100%{
+        left: -2530px;
+    }
+}
